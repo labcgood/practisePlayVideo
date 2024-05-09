@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		0D5CA3362BEB4B8E0029A834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5CA3352BEB4B8E0029A834 /* AppDelegate.swift */; };
 		0D5CA3382BEB4B8E0029A834 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5CA3372BEB4B8E0029A834 /* SceneDelegate.swift */; };
-		0D5CA33A2BEB4B8E0029A834 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5CA3392BEB4B8E0029A834 /* ViewController.swift */; };
 		0D5CA33D2BEB4B8E0029A834 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0D5CA33C2BEB4B8E0029A834 /* Base */; };
 		0D5CA33F2BEB4B900029A834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5CA33E2BEB4B900029A834 /* Assets.xcassets */; };
 		0D5CA3422BEB4B900029A834 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0D5CA3412BEB4B900029A834 /* Base */; };
+		0D5CA34A2BEB4BCD0029A834 /* SelectVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5CA3492BEB4BCD0029A834 /* SelectVideoViewController.swift */; };
+		0D5CA34D2BEB4FAA0029A834 /* carbon.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 0D5CA34B2BEB4FA90029A834 /* carbon.MOV */; };
+		0D5CA34E2BEB4FAA0029A834 /* avocado.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 0D5CA34C2BEB4FAA0029A834 /* avocado.MOV */; };
+		0D5CA3502BEB60C70029A834 /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5CA34F2BEB60C70029A834 /* TempViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D5CA3322BEB4B8E0029A834 /* practisePlayVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practisePlayVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5CA3352BEB4B8E0029A834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D5CA3372BEB4B8E0029A834 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0D5CA3392BEB4B8E0029A834 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D5CA33C2BEB4B8E0029A834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D5CA33E2BEB4B900029A834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D5CA3412BEB4B900029A834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D5CA3432BEB4B900029A834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D5CA3492BEB4BCD0029A834 /* SelectVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVideoViewController.swift; sourceTree = "<group>"; };
+		0D5CA34B2BEB4FA90029A834 /* carbon.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = carbon.MOV; sourceTree = "<group>"; };
+		0D5CA34C2BEB4FAA0029A834 /* avocado.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = avocado.MOV; sourceTree = "<group>"; };
+		0D5CA34F2BEB60C70029A834 /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 		0D5CA3292BEB4B8E0029A834 = {
 			isa = PBXGroup;
 			children = (
+				0D5CA34F2BEB60C70029A834 /* TempViewController.swift */,
 				0D5CA3342BEB4B8E0029A834 /* practisePlayVideo */,
 				0D5CA3332BEB4B8E0029A834 /* Products */,
 			);
@@ -58,11 +65,13 @@
 			children = (
 				0D5CA3352BEB4B8E0029A834 /* AppDelegate.swift */,
 				0D5CA3372BEB4B8E0029A834 /* SceneDelegate.swift */,
-				0D5CA3392BEB4B8E0029A834 /* ViewController.swift */,
 				0D5CA33B2BEB4B8E0029A834 /* Main.storyboard */,
-				0D5CA33E2BEB4B900029A834 /* Assets.xcassets */,
+				0D5CA3492BEB4BCD0029A834 /* SelectVideoViewController.swift */,
 				0D5CA3402BEB4B900029A834 /* LaunchScreen.storyboard */,
 				0D5CA3432BEB4B900029A834 /* Info.plist */,
+				0D5CA34C2BEB4FAA0029A834 /* avocado.MOV */,
+				0D5CA33E2BEB4B900029A834 /* Assets.xcassets */,
+				0D5CA34B2BEB4FA90029A834 /* carbon.MOV */,
 			);
 			path = practisePlayVideo;
 			sourceTree = "<group>";
@@ -128,6 +137,8 @@
 				0D5CA33F2BEB4B900029A834 /* Assets.xcassets in Resources */,
 				0D5CA3422BEB4B900029A834 /* Base in Resources */,
 				0D5CA33D2BEB4B8E0029A834 /* Base in Resources */,
+				0D5CA34E2BEB4FAA0029A834 /* avocado.MOV in Resources */,
+				0D5CA34D2BEB4FAA0029A834 /* carbon.MOV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D5CA33A2BEB4B8E0029A834 /* ViewController.swift in Sources */,
+				0D5CA3502BEB60C70029A834 /* TempViewController.swift in Sources */,
+				0D5CA34A2BEB4BCD0029A834 /* SelectVideoViewController.swift in Sources */,
 				0D5CA3362BEB4B8E0029A834 /* AppDelegate.swift in Sources */,
 				0D5CA3382BEB4B8E0029A834 /* SceneDelegate.swift in Sources */,
 			);
@@ -292,8 +304,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FUY7Q7WR79;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = practisePlayVideo/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "請允許App將照片存到手機相簿";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,8 +333,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FUY7Q7WR79;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = practisePlayVideo/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "請允許App將照片存到手機相簿";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

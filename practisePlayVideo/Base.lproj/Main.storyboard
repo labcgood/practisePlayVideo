@@ -1,24 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GjQ-pt-AAW">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Select Video View Controller-->
+        <scene sceneID="Tod-Ug-BzK">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="GjQ-pt-AAW" customClass="SelectVideoViewController" customModule="practisePlayVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RPw-q0-OLp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7L-lh-Ysf">
+                                <rect key="frame" x="100" y="479" width="193" height="56.666666666666629"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="More" cornerStyle="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.94117647059999998" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="playOtherVideo:" destination="GjQ-pt-AAW" eventType="touchUpInside" id="0Z2-6R-f7Z"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0t-V3-V1R">
+                                <rect key="frame" x="20" y="99" width="353" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avocado" translatesAutoresizingMaskIntoConstraints="NO" id="dhH-Wt-zrT">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="KYL-70-Kag"/>
+                                            <constraint firstAttribute="width" constant="200" id="OqE-U5-7Au"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bi6-uB-nKh">
+                                        <rect key="frame" x="200" y="0.0" width="76.666666666666686" height="150"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="play.rectangle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="playVideoAvocado:" destination="GjQ-pt-AAW" eventType="touchUpInside" id="zKK-SS-UvX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ias-Gp-qaB">
+                                        <rect key="frame" x="276.66666666666669" y="0.0" width="76.333333333333314" height="150"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system"/>
+                                        <connections>
+                                            <action selector="shareAvocado:" destination="GjQ-pt-AAW" eventType="touchUpInside" id="GFC-3P-8ih"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ias-Gp-qaB" firstAttribute="width" secondItem="Bi6-uB-nKh" secondAttribute="width" id="oGR-Ri-lEs"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="249-iR-CsB">
+                                <rect key="frame" x="20" y="289" width="353" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carbon" translatesAutoresizingMaskIntoConstraints="NO" id="wMr-zA-LpG">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="nH4-e5-SO3"/>
+                                            <constraint firstAttribute="width" constant="200" id="yfh-5L-LKy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WL1-Du-fgx">
+                                        <rect key="frame" x="200" y="0.0" width="76.666666666666686" height="150"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="play.rectangle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="playVideoCarbon:" destination="GjQ-pt-AAW" eventType="touchUpInside" id="4vM-Yr-1KG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Erv-Jw-xLh">
+                                        <rect key="frame" x="276.66666666666669" y="0.0" width="76.333333333333314" height="150"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system"/>
+                                        <connections>
+                                            <action selector="shareCarbon:" destination="GjQ-pt-AAW" eventType="touchUpInside" id="pht-tB-etv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Erv-Jw-xLh" firstAttribute="width" secondItem="WL1-Du-fgx" secondAttribute="width" id="BlL-4I-agn"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="668-M3-mtN"/>
+                        <color key="backgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="r7L-lh-Ysf" firstAttribute="leading" secondItem="668-M3-mtN" secondAttribute="leading" constant="100" id="1ve-O4-LeP"/>
+                            <constraint firstItem="668-M3-mtN" firstAttribute="trailing" secondItem="249-iR-CsB" secondAttribute="trailing" constant="20" id="2cj-W6-uMg"/>
+                            <constraint firstItem="668-M3-mtN" firstAttribute="trailing" secondItem="m0t-V3-V1R" secondAttribute="trailing" constant="20" id="5HP-vg-zg6"/>
+                            <constraint firstItem="668-M3-mtN" firstAttribute="trailing" secondItem="r7L-lh-Ysf" secondAttribute="trailing" constant="100" id="7vJ-Xd-hUn"/>
+                            <constraint firstItem="m0t-V3-V1R" firstAttribute="top" secondItem="668-M3-mtN" secondAttribute="top" constant="40" id="IFd-Xf-u1G"/>
+                            <constraint firstItem="m0t-V3-V1R" firstAttribute="leading" secondItem="668-M3-mtN" secondAttribute="leading" constant="20" id="Il2-GO-Mdl"/>
+                            <constraint firstItem="249-iR-CsB" firstAttribute="leading" secondItem="668-M3-mtN" secondAttribute="leading" constant="20" id="aTf-5Z-4qM"/>
+                            <constraint firstItem="r7L-lh-Ysf" firstAttribute="top" secondItem="249-iR-CsB" secondAttribute="bottom" constant="40" id="bcq-7l-OaW"/>
+                            <constraint firstItem="249-iR-CsB" firstAttribute="top" secondItem="m0t-V3-V1R" secondAttribute="bottom" constant="40" id="dT1-vu-z1w"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="images" destination="dhH-Wt-zrT" collectionClass="NSMutableArray" id="2rR-xO-m1P"/>
+                        <outletCollection property="images" destination="wMr-zA-LpG" collectionClass="NSMutableArray" id="UqO-i7-6Cn"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfR-3Y-cOM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-3230" y="-580"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="avocado" width="886" height="886"/>
+        <image name="carbon" width="769" height="1024"/>
+        <image name="play.rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="square.and.arrow.up" catalog="system" width="108" height="128"/>
+    </resources>
 </document>
